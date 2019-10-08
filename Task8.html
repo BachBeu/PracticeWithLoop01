@@ -8,11 +8,12 @@
 <script>
     let a = parseInt(prompt("Nhập số thứ nhất: "));
     let b = parseInt(prompt("Nhập số thứ hai: "));
-    let xoso = Math.floor(Math.random() * (a-b) + b);
+    let xoso = Math.floor(Math.random() * (a-b) +b);
     for (let i = 0; i < 3; i++){
         let num  = prompt("Số dự đoán");
         if(num==xoso){
             alert("số bạn nhập đã đúng");
+            break;
         }else if(num<xoso){
             alert("số bạn nhập nhỏ hơn số dự đoán");
         }else{
