@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số thứ nhất: "));
+    let b = parseInt(prompt("Nhập số thứ hai: "));
+    let xoso = Math.floor(Math.random() * (a-b) + b);
+    for (let i = 0; i < 3; i++){
+        let num  = prompt("Số dự đoán");
+        if(num==xoso){
+            alert("số bạn nhập đã đúng");
+        }else if(num<xoso){
+            alert("số bạn nhập nhỏ hơn số dự đoán");
+        }else{
+            alert("số bạn nhập lớn hơn số dự đoán");
+        }
+    }
+</script>
+</body>
+</html>
